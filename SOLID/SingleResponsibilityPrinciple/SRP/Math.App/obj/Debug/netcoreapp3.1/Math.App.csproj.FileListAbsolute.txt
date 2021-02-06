@@ -1,0 +1,16 @@
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\bin\Debug\netcoreapp3.1\Math.App.exe
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\bin\Debug\netcoreapp3.1\Math.App.deps.json
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\bin\Debug\netcoreapp3.1\Math.App.runtimeconfig.json
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\bin\Debug\netcoreapp3.1\Math.App.runtimeconfig.dev.json
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\bin\Debug\netcoreapp3.1\Math.App.dll
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\bin\Debug\netcoreapp3.1\Math.App.pdb
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\bin\Debug\netcoreapp3.1\Math.Geometry.dll
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\bin\Debug\netcoreapp3.1\Math.Geometry.pdb
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\obj\Debug\netcoreapp3.1\Math.App.csprojAssemblyReference.cache
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\obj\Debug\netcoreapp3.1\Math.App.AssemblyInfoInputs.cache
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\obj\Debug\netcoreapp3.1\Math.App.AssemblyInfo.cs
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\obj\Debug\netcoreapp3.1\Math.App.csproj.CoreCompileInputs.cache
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\obj\Debug\netcoreapp3.1\Math.App.csproj.CopyComplete
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\obj\Debug\netcoreapp3.1\Math.App.dll
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\obj\Debug\netcoreapp3.1\Math.App.pdb
+D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.App\obj\Debug\netcoreapp3.1\Math.App.genruntimeconfig.cache

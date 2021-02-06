@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Graphics.App/1.0.0": {
+        "dependencies": {
+          "Graphics.Geometry": "1.0.0",
+          "Math.Geometry": "1.0.0"
+        },
+        "runtime": {
+          "Graphics.App.dll": {}
+        }
+      },
+      "Graphics.Geometry/1.0.0": {
+        "runtime": {
+          "Graphics.Geometry.dll": {}
+        }
+      },
+      "Math.Geometry/1.0.0": {
+        "runtime": {
+          "Math.Geometry.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Graphics.App/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Graphics.Geometry/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Math.Geometry/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

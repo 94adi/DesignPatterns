@@ -1,0 +1,7 @@
+https://stackify.com/solid-design-principles/
+
+https://www.youtube.com/watch?v=5RwhyZnVRS8
+
+https://hackernoon.com/you-dont-understand-the-single-responsibility-principle-abfdd005b137
+
+https://towardsdatascience.com/solid-programming-part-1-single-responsibility-principle-efca5e7c2a87
