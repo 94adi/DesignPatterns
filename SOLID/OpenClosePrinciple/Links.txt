@@ -1,0 +1,7 @@
+Principle: You should be able to extend the behavior of a system without having to modify that system.
+
+https://blog.cleancoder.com/uncle-bob/2014/05/12/TheOpenClosedPrinciple.html#:~:text=The%20Open%20Closed%20Principle%20(OCP,it%20is%20available%20for%20extension.
+
+https://stackify.com/solid-design-open-closed-principle/
+
+http://joelabrahamsson.com/a-simple-example-of-the-openclosed-principle/

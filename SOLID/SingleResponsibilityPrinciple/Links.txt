@@ -1,3 +1,6 @@
+Principle: Gather together the things that change for the same reasons. Separate things that change for different reasons.
+Limit the impact of CHANGE.
+
 https://stackify.com/solid-design-principles/
 
 https://www.youtube.com/watch?v=5RwhyZnVRS8
@@ -5,3 +8,5 @@ https://www.youtube.com/watch?v=5RwhyZnVRS8
 https://hackernoon.com/you-dont-understand-the-single-responsibility-principle-abfdd005b137
 
 https://towardsdatascience.com/solid-programming-part-1-single-responsibility-principle-efca5e7c2a87
+
+https://blog.cleancoder.com/uncle-bob/2014/05/08/SingleReponsibilityPrinciple.html
