@@ -1,0 +1,18 @@
+class Person{
+
+	public string Name;
+    ....
+	public static Buider New => new Builder();
+
+}
+
+class Builder: PersonBirthDateBuilder<Builder> { internal Builder() { } }
+
+class PersonBirthDateBuilder<SELF> : PersonJobBuilder<PersonBirthDateBuilder<SELF>>
+      where SELF : PersonBirthDateBuilder<SELF>
+
+class PersonJobBuilder<SELF> : PersonInfoBuilder<PersonJobBuilder<SELF>>
+      where SELF : PersonJobBuilder<SELF>
+
+class PersonInfoBuilder<SELF> : PersonBuilder
+      where SELF : PersonInfoBuilder<SELF>
