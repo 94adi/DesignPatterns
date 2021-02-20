@@ -14,17 +14,16 @@ namespace CourseBuilder.Builder
 
         public CourseAssistantsBuilder Join(string firstName, string lastName)
         {
-            this.course.Assistants.Add(new Assistant { FirstName = firstName, LastName = lastName });
-            var lastElement = this.course.Assistants.Count - 1;
-            this.course.Assistants[lastElement].Courses.Add(this.course);
+            var assistant = new Assistant() { FirstName = firstName, LastName = lastName };
+            assistant.Courses.Add(this.course);
+            this.course.Assistants.Add(assistant);
             return this;
         }
 
         public CourseAssistantsBuilder Join(Assistant assistant)
         {
+            assistant.Courses.Add(this.course);
             course.Assistants.Add(assistant);
-            var lastElement = this.course.Assistants.Count - 1;
-            this.course.Assistants[lastElement].Courses.Add(this.course);
             return this;
         }
 

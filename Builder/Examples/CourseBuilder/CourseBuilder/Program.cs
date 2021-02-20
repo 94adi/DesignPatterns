@@ -7,7 +7,7 @@ namespace CourseBuilder
     {
         static void Main(string[] args)
         {
-            //take from data source
+            //taken from data source
             Student stud = new Student()
             {
                 Id = new Guid("df0d0294-90ad-44cd-a548-ad7b30954e5e"),
@@ -35,6 +35,27 @@ namespace CourseBuilder
                                                    .Enroll("Stanley", "Johnson")
                                                    .Enroll("Janet", "Benn")                                                
                                                    .Enroll(stud);
+
+            var courseBuilder1 = new Builder.CourseBuilder();
+
+            Course newCourse1 = courseBuilder1.Course.AddTitle("Digital Logic")
+                                    .HeldBy("Electrical Engineering")
+                                    .NumberOfCredits(3)
+                                    .NumberOfLectures(20)
+                                    .BeginsOn(new DateTime(2022, 3, 25))
+                                    .EndsOn(new DateTime(2022, 7, 8))
+                              .Professor.FullName("Mark", "Wod")
+                                        .PartOf("Electrical Engineering")
+                              .Assistants.Join("Jay", "Lee").PartOf("Computer Science")
+                                         .Join("Shawn", "Williams").PartOf("Automatics")
+                                         .Join("Samantha", "West").PartOf("Electrical Engineering")
+                              .Students.Enroll("Mike", "Brown")
+                                       .Enroll("Stuart", "Jones")
+                                       .Enroll("Michelle", "Jan")
+                                       .Enroll("John", "Adams")
+                                       .Enroll("Stanley", "Johnson")
+                                       .Enroll("Janet", "Benn")
+                                       .Enroll(stud);
 
             Console.WriteLine(newCourse.ToString());
             #region BAD_EXAMPLE
