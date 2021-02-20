@@ -1,0 +1,13 @@
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\obj\Debug\netcoreapp3.1\BuilderPatternExamples.csprojAssemblyReference.cache
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\obj\Debug\netcoreapp3.1\BuilderPatternExamples.AssemblyInfoInputs.cache
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\obj\Debug\netcoreapp3.1\BuilderPatternExamples.AssemblyInfo.cs
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\obj\Debug\netcoreapp3.1\BuilderPatternExamples.csproj.CoreCompileInputs.cache
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\bin\Debug\netcoreapp3.1\BuilderPatternExamples.exe
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\bin\Debug\netcoreapp3.1\BuilderPatternExamples.deps.json
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\bin\Debug\netcoreapp3.1\BuilderPatternExamples.runtimeconfig.json
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\bin\Debug\netcoreapp3.1\BuilderPatternExamples.runtimeconfig.dev.json
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\bin\Debug\netcoreapp3.1\BuilderPatternExamples.dll
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\bin\Debug\netcoreapp3.1\BuilderPatternExamples.pdb
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\obj\Debug\netcoreapp3.1\BuilderPatternExamples.dll
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\obj\Debug\netcoreapp3.1\BuilderPatternExamples.pdb
+D:\Projects\DesignPatterns\Builder\Examples\BuilderPatternExamples\BuilderPatternExamples\obj\Debug\netcoreapp3.1\BuilderPatternExamples.genruntimeconfig.cache
