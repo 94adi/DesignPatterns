@@ -13,16 +13,15 @@ namespace CourseBuilder.Builder
 
         public CourseStudentsBuilder Enroll(string firstName, string lastName)
         {
-            this.course.Students.Add(new Student() { FirstName = firstName, LastName = lastName });
-            var lastIndex = this.course.Students.Count;
-            this.course.Students[lastIndex - 1].Courses.Add(this.course);
+            var student = new Student() { FirstName = firstName, LastName = lastName };
+            student.Courses.Add(this.course);
+            this.course.Students.Add(student);
             return this;
         }
         public CourseStudentsBuilder Enroll(Student student)
         {
+            student.Courses.Add(this.course);
             this.course.Students.Add(student);
-            var lastIndex = this.course.Students.Count;
-            this.course.Students[lastIndex - 1].Courses.Add(this.course);
             return this;
         }
     }

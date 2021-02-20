@@ -9,12 +9,11 @@ namespace CourseBuilder
         public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public IList<Course> Courses {get;set;}
+        public IList<Course> Courses {get;set;} = new List<Course>();
 
         public Student()
         {
             Id = Guid.NewGuid();
-            Courses = new List<Course>();
         }
 
         public override string ToString()

@@ -15,8 +15,9 @@ namespace CourseBuilder.Builder
 
         public CourseProfessorBuilder FullName(string firstName, string lastName)
         {
-            this.course.Professor.FirstName = firstName;
-            this.course.Professor.LastName = lastName;
+            var professor = new Professor() { FirstName = firstName, LastName = lastName };
+            professor.Courses.Add(this.course);
+            this.course.Professor = professor;
             return this;
         }
 
