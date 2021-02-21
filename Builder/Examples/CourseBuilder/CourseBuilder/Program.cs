@@ -38,6 +38,8 @@ namespace CourseBuilder
 
             var courseBuilder1 = new Builder.CourseBuilder();
 
+            var assistant = newCourse.Assistants.Find(a => a.FirstName == "Jay" && a.LastName == "Lee");
+
             Course newCourse1 = courseBuilder1.Course.AddTitle("Digital Logic")
                                     .HeldBy("Electrical Engineering")
                                     .NumberOfCredits(3)
@@ -46,7 +48,7 @@ namespace CourseBuilder
                                     .EndsOn(new DateTime(2022, 7, 8))
                               .Professor.FullName("Mark", "Wod")
                                         .PartOf("Electrical Engineering")
-                              .Assistants.Join("Jay", "Lee").PartOf("Computer Science")
+                              .Assistants.Join(assistant)
                                          .Join("Shawn", "Williams").PartOf("Automatics")
                                          .Join("Samantha", "West").PartOf("Electrical Engineering")
                               .Students.Enroll("Mike", "Brown")
