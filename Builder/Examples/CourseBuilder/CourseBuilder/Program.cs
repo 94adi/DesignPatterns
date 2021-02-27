@@ -16,50 +16,45 @@ namespace CourseBuilder
             };
 
             var courseBuilder = new Builder.CourseBuilder();
-
-            Course newCourse = courseBuilder.Course.AddTitle("Intro to computer programming")
-                                                .HeldBy("Computer science")
-                                                .NumberOfCredits(5)
-                                                .NumberOfLectures(24)
-                                                .BeginsOn(new DateTime(2021, 2, 25))
-                                                .EndsOn(new DateTime(2021, 6, 8))
-                                          .Professor.FullName("John", "Smith")
-                                                    .PartOf("Computer science")
-                                          .Assistants.Join("Jay", "Lee").PartOf("Computer Science")
-                                                     .Join("Shawn", "Williams").PartOf("Automatics")
-                                                     .Join("Samantha", "West").PartOf("Electrical Engineering")
-                                          .Students.Enroll("Mike", "Brown")
-                                                   .Enroll("Stuart", "Jones")
-                                                   .Enroll("Michelle", "Jan")
-                                                   .Enroll("John", "Adams")
-                                                   .Enroll("Stanley", "Johnson")
-                                                   .Enroll("Janet", "Benn")                                                
-                                                   .Enroll(stud);
-
             var courseBuilder1 = new Builder.CourseBuilder();
 
-            var assistant = newCourse.Assistants.Find(a => a.FirstName == "Jay" && a.LastName == "Lee");
+            Course myCourse = courseBuilder.AddTitle("Intro to computer programming")
+                                           .NumberOfLectures(24)
+                                           .NumberOfCredits(4)
+                                           .HeldBy("Computer science")
+                                           .BeginsOn(new DateTime(2021, 2, 25))
+                                           .EndsOn(new DateTime(2021, 6, 8))
+                                           .AddProfessor("John", "Smith", "Computer science")
+                                           .AddAssistant("Jay", "Lee", "Computer Science")
+                                           .AddAssistant("Shawn", "Williams", "Automatics")
+                                           .AddAssistant("Samantha", "West", "Electrical Engineering")
+                                           .EnrollStudent("Stuart", "Jones")
+                                           .EnrollStudent("Michelle", "Jan")
+                                           .EnrollStudent("John", "Adams")
+                                           .EnrollStudent("Stanley", "Johnson")
+                                           .EnrollStudent("Janet", "Benn")
+                                           .EnrollStudent(stud)
+                                           .Build();
 
-            Course newCourse1 = courseBuilder1.Course.AddTitle("Digital Logic")
-                                    .HeldBy("Electrical Engineering")
-                                    .NumberOfCredits(3)
-                                    .NumberOfLectures(20)
-                                    .BeginsOn(new DateTime(2022, 3, 25))
-                                    .EndsOn(new DateTime(2022, 7, 8))
-                              .Professor.FullName("Mark", "Wod")
-                                        .PartOf("Electrical Engineering")
-                              .Assistants.Join(assistant)
-                                         .Join("Shawn", "Williams").PartOf("Automatics")
-                                         .Join("Samantha", "West").PartOf("Electrical Engineering")
-                              .Students.Enroll("Mike", "Brown")
-                                       .Enroll("Stuart", "Jones")
-                                       .Enroll("Michelle", "Jan")
-                                       .Enroll("John", "Adams")
-                                       .Enroll("Stanley", "Johnson")
-                                       .Enroll("Janet", "Benn")
-                                       .Enroll(stud);
+            Course myCourse1 = courseBuilder1.AddTitle("Digital Logic")
+                               .NumberOfLectures(24)
+                               .NumberOfCredits(4)
+                               .HeldBy("Computer science")
+                               .BeginsOn(new DateTime(2021, 2, 25))
+                               .EndsOn(new DateTime(2021, 6, 8))
+                               .AddProfessor("John", "Smith", "Computer science")
+                               .AddAssistant("Jay", "Lee", "Computer Science")
+                               .AddAssistant("Shawn", "Williams", "Automatics")
+                               .AddAssistant("Samantha", "West", "Electrical Engineering")
+                               .EnrollStudent("Stuart", "Jones")
+                               .EnrollStudent("Michelle", "Jan")
+                               .EnrollStudent("John", "Adams")
+                               .EnrollStudent("Stanley", "Johnson")
+                               .EnrollStudent("Janet", "Benn")
+                               .EnrollStudent(stud)
+                               .Build();
 
-            Console.WriteLine(newCourse.ToString());
+            Console.WriteLine(myCourse.ToString());
             #region BAD_EXAMPLE
             /*Course courseBad = new Course()
             {
