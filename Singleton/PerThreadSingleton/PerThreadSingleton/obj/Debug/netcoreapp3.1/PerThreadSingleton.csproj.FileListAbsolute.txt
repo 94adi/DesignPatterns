@@ -1,0 +1,13 @@
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\bin\Debug\netcoreapp3.1\PerThreadSingleton.exe
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\bin\Debug\netcoreapp3.1\PerThreadSingleton.deps.json
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\bin\Debug\netcoreapp3.1\PerThreadSingleton.runtimeconfig.json
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\bin\Debug\netcoreapp3.1\PerThreadSingleton.runtimeconfig.dev.json
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\bin\Debug\netcoreapp3.1\PerThreadSingleton.dll
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\bin\Debug\netcoreapp3.1\PerThreadSingleton.pdb
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\obj\Debug\netcoreapp3.1\PerThreadSingleton.csprojAssemblyReference.cache
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\obj\Debug\netcoreapp3.1\PerThreadSingleton.AssemblyInfoInputs.cache
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\obj\Debug\netcoreapp3.1\PerThreadSingleton.AssemblyInfo.cs
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\obj\Debug\netcoreapp3.1\PerThreadSingleton.csproj.CoreCompileInputs.cache
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\obj\Debug\netcoreapp3.1\PerThreadSingleton.dll
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\obj\Debug\netcoreapp3.1\PerThreadSingleton.pdb
+D:\Projects\DesignPatterns\Singleton\PerThreadSingleton\PerThreadSingleton\obj\Debug\netcoreapp3.1\PerThreadSingleton.genruntimeconfig.cache
