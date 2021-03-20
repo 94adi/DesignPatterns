@@ -1,9 +1,0 @@
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\bin\Debug\netstandard2.0\Graphics.Geometry.deps.json
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\bin\Debug\netstandard2.0\Graphics.Geometry.dll
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\bin\Debug\netstandard2.0\Graphics.Geometry.pdb
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\obj\Debug\netstandard2.0\Graphics.Geometry.csprojAssemblyReference.cache
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\obj\Debug\netstandard2.0\Graphics.Geometry.AssemblyInfoInputs.cache
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\obj\Debug\netstandard2.0\Graphics.Geometry.AssemblyInfo.cs
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\obj\Debug\netstandard2.0\Graphics.Geometry.csproj.CoreCompileInputs.cache
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\obj\Debug\netstandard2.0\Graphics.Geometry.dll
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Graphics.Geometry\obj\Debug\netstandard2.0\Graphics.Geometry.pdb

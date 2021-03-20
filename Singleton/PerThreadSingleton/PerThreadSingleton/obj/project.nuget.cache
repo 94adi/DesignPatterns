@@ -1,8 +1,0 @@
-{
-  "version": 2,
-  "dgSpecHash": "6acwp/AQ56odaU0CtNYwMvsufBD4BGBkJ44qpC3oSziHmE/aebq/nq/0S7cF3PTsufywK1k8xGT1YMBo7+exwA==",
-  "success": true,
-  "projectFilePath": "D:\\Projects\\DesignPatterns\\Singleton\\PerThreadSingleton\\PerThreadSingleton\\PerThreadSingleton.csproj",
-  "expectedPackageFiles": [],
-  "logs": []
-}

@@ -1,8 +1,0 @@
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.Geometry\bin\Debug\netcoreapp3.1\Math.Geometry.deps.json
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.Geometry\bin\Debug\netcoreapp3.1\Math.Geometry.dll
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.Geometry\bin\Debug\netcoreapp3.1\Math.Geometry.pdb
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.Geometry\obj\Debug\netcoreapp3.1\Math.Geometry.AssemblyInfoInputs.cache
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.Geometry\obj\Debug\netcoreapp3.1\Math.Geometry.AssemblyInfo.cs
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.Geometry\obj\Debug\netcoreapp3.1\Math.Geometry.csproj.CoreCompileInputs.cache
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.Geometry\obj\Debug\netcoreapp3.1\Math.Geometry.dll
-D:\Projects\DesignPatterns\SOLID\SingleResponsibilityPrinciple\SRP\Math.Geometry\obj\Debug\netcoreapp3.1\Math.Geometry.pdb
