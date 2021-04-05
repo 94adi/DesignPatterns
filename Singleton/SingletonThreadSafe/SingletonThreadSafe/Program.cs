@@ -46,8 +46,8 @@ namespace SingletonThreadSafe
         static void createSingleton(out SafeSingleton instance)
         {
             instance = SafeSingleton.Instance;
-            instance.Name = Thread.CurrentThread.ManagedThreadId.ToString();
-            Console.WriteLine("Running thread id: " + Thread.CurrentThread.ManagedThreadId);
+            instance.Name = Task.CurrentId.ToString();
+            Console.WriteLine("Running task id: " + Task.CurrentId.ToString());
         }
 
         static void Main(string[] args)
@@ -56,21 +56,17 @@ namespace SingletonThreadSafe
             SafeSingleton instance2 = null;
             SafeSingleton instance3 = null;
 
-            Thread thread1 = new Thread(new ThreadStart(() => createSingleton(out instance1)));
-            thread1.Start();
+            Task task1 = Task.Run(() => createSingleton(out instance1));
 
-            Thread thread2 = new Thread(new ThreadStart(() => createSingleton(out instance2)));
-            thread2.Start();
+            Task task2 = Task.Run(() => createSingleton(out instance2));
 
-            Thread thread3 = new Thread(new ThreadStart(() => createSingleton(out instance3)));
-            thread3.Start();
+            Task task3 = Task.Run(() => createSingleton(out instance3));
 
+            task1.Wait();
+            task2.Wait();
+            task3.Wait();
 
-            thread1.Join();
-            thread2.Join();
-            thread3.Join();
-
-            Console.WriteLine("Threads run complete!");
+            Console.WriteLine("Tasks run complete!");
 
             Console.WriteLine($"Number of created instances: {SafeSingleton.Instances}");
 
