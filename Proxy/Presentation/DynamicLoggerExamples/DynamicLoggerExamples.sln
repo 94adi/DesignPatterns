@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicVariableExample", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicObjectExample", "DynamicObjectExample\DynamicObjectExample.csproj", "{2CAE0B81-F436-420D-9A78-88FDA45F2806}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuckTyping", "DuckTyping\DuckTyping.csproj", "{AECD2346-AD7E-46D5-BA01-CA6993874328}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2CAE0B81-F436-420D-9A78-88FDA45F2806}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2CAE0B81-F436-420D-9A78-88FDA45F2806}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2CAE0B81-F436-420D-9A78-88FDA45F2806}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AECD2346-AD7E-46D5-BA01-CA6993874328}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AECD2346-AD7E-46D5-BA01-CA6993874328}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AECD2346-AD7E-46D5-BA01-CA6993874328}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AECD2346-AD7E-46D5-BA01-CA6993874328}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
