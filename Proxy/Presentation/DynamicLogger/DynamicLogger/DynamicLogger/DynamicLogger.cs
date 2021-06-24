@@ -54,6 +54,29 @@ namespace DynamicLogger
             }
         }
 
+        public override bool TryGetMember(GetMemberBinder binder, out object result)
+        {
+            try
+            {
+                result = subject.GetType().GetProperty(binder.Name).GetValue(subject, null);
+                Console.WriteLine($"Getting value from property: {subject.GetType().Name}.{binder.Name} = {result}");
+                return true;
+            }
+            catch
+            {
+                result = null;
+                return false;
+            }
+
+        }
+
+        public override bool TrySetMember(SetMemberBinder binder, object value)
+        {
+            subject.GetType().GetProperty(binder.Name).SetValue(subject, value);
+            Console.WriteLine($"Setting value for property: {subject.GetType().Name}.{binder.Name} = {value}");
+            return true;
+        }
+
         public string Info
         {
             get

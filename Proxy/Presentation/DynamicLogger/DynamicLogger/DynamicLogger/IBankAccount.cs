@@ -10,5 +10,7 @@ namespace DynamicLogger
     {
         void Deposit(int amount);
         bool Withdraw(int amount);
+        public DateTime DateCreated { get; }
+        public string Name { get; set; }
     }
 }

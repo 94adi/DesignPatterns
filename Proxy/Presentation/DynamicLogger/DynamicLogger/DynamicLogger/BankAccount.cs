@@ -11,6 +11,23 @@ namespace DynamicLogger
         private int _balance;
         private const int OVERDRAFTLIMIT = -500;
 
+        private DateTime _dateCreated;
+
+        public DateTime DateCreated
+        {
+            get
+            {
+                return _dateCreated;
+            }
+        }
+
+        public string Name { get ; set; }
+
+        public BankAccount()
+        {
+            _dateCreated = DateTime.Now;
+        }
+
         public void Deposit(int amount)
         {
             _balance += amount;
