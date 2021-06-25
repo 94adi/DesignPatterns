@@ -8,7 +8,7 @@ namespace DynamicObjectExample
     {
         Dictionary<string, object> dictionary
             = new Dictionary<string, object>();
-        z
+
         public int Count
         {
             get
