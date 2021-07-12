@@ -8,13 +8,20 @@ namespace DynamicObjectExample
     {
         Dictionary<string, object> dictionary
             = new Dictionary<string, object>();
-        z
+
         public int Count
         {
             get
             {
                 return dictionary.Count;
             }
+        }
+
+        public string TestProp { get; set; }
+
+        public void TestMethod()
+        {
+            Console.WriteLine("TEST METHOD");
         }
 
         public override bool TryGetMember(
@@ -48,14 +55,13 @@ namespace DynamicObjectExample
 
             Console.WriteLine(person.firstname + " " + person.lastname);
 
-            Console.WriteLine(
-                "Number of dynamic properties:" + person.Count);
+            person.TestMethod();
 
-            // The following statement throws an exception at run time.
-            // There is no "address" property,
-            // so the TryGetMember method returns false and this causes a
-            // RuntimeBinderException.
-            // Console.WriteLine(person.address);
+            person.TestProp = "test prop";
+            Console.WriteLine(person.TestProp);
+
+            Console.WriteLine("Number of dynamic properties:" + person.Count);
+
         }
     }
 
