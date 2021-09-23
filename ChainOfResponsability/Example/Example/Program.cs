@@ -101,6 +101,7 @@ namespace Example
 
         public override void Handle()
         {
+            WriteLine("Handling authentication process...");
             if (this.userRequest.Cookie.Contains("SESS"))
             {
                 string sessionId = this.userRequest.Cookie.Split(":")[1];
@@ -135,8 +136,11 @@ namespace Example
 
         public override void Handle()
         {
+            WriteLine("Handling authorization...");
             if (this.userRequest.URL.Contains("/admin") && (!this.userRequest.Role.Equals("Admin")))
             {
+                userResponse.ReponseCode = 401;
+                userResponse.Message = "You do not have proper authorization to access this content";
                 return;
             }
             else
@@ -164,17 +168,59 @@ namespace Example
                 ContentType = "image/svg+xml",
                 URL = "/static/files/johnsmith.svg",
                 IsStaticRequest = true
-        };
+            };
+
+            UserRequest request2 = new UserRequest
+            {
+                Cookie = "SESS:12345",
+                UserName = "johnsmith",
+                Role = "user",
+                ContentType = "text/html",
+                URL = "/products/index.html",
+                IsStaticRequest = false
+            };
+
+            UserRequest request3 = new UserRequest
+            {
+                Cookie = "SESS:12345",
+                UserName = "johnsmith",
+                Role = "user",
+                ContentType = "text/html",
+                URL = "/admin/products/upsert/3",
+                IsStaticRequest = false
+            };
 
             UserResponse response = new UserResponse();
 
-            var pipeline1 = BuildPipeLine(request1, response);
+            WriteLine("****** Pipeline for request 1 ******");
 
-            pipeline1.Handle();
+            var pipeline = BuildPipeLine(request1, response);
 
-            Console.WriteLine(response);
+            pipeline.Handle();
 
+            WriteLine(response);
 
+            WriteLine("****** END OF Pipeline for request 1 ******");
+
+            WriteLine("****** Pipeline for request 2 ******");
+
+            pipeline = BuildPipeLine(request2, response);
+
+            pipeline.Handle();
+
+            WriteLine(response);
+
+            WriteLine("****** END OF Pipeline for request 2 ******");
+
+            WriteLine("****** Pipeline for request 3 ******");
+
+            pipeline = BuildPipeLine(request3, response);
+
+            pipeline.Handle();
+
+            WriteLine(response);
+
+            WriteLine("****** Pipeline for request 3 ******");
         }
 
         static RequestPipeline BuildPipeLine(UserRequest userRequest, UserResponse userResponse)
