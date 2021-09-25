@@ -74,6 +74,7 @@ namespace Example
                     userResponse.IsReponseCached = true;
                     userResponse.CacheControl = "max-age=31536000, public";
                     userResponse.ReponseCode = 200;
+                    userResponse.Message = "OK";
 
                     //short circuit pipeline
                     return;
@@ -84,6 +85,7 @@ namespace Example
                     userResponse.IsReponseCached = false;
                     userResponse.CacheControl = "max-age=0, public";
                     userResponse.ReponseCode = 200;
+                    userResponse.Message = "OK";
 
                     //short circuit pipeline
                     return;
@@ -137,10 +139,10 @@ namespace Example
         public override void Handle()
         {
             WriteLine("Handling authorization...");
-            if (this.userRequest.URL.Contains("/admin") && (!this.userRequest.Role.Equals("Admin")))
+            if (this.userRequest.URL.Contains("/admin") && (!this.userRequest.Role.Equals("Admin", StringComparison.CurrentCultureIgnoreCase)))
             {
                 userResponse.ReponseCode = 401;
-                userResponse.Message = "You do not have proper authorization to access this content";
+                userResponse.Message = "You need to authenticate to access this content";
                 return;
             }
             else
@@ -149,6 +151,7 @@ namespace Example
                 userResponse.IsReponseCached = false;
                 userResponse.CacheControl = "max-age=0, public";
                 userResponse.ReponseCode = 200;
+                userResponse.Message = "OK";
             }
 
             base.Handle();
@@ -190,6 +193,16 @@ namespace Example
                 IsStaticRequest = false
             };
 
+            UserRequest request4 = new UserRequest
+            {
+                Cookie = "SESS:11111",
+                UserName = "master-admin",
+                Role = "admin",
+                ContentType = "text/html",
+                URL = "/admin/products/upsert/5",
+                IsStaticRequest = false
+            };
+
             UserResponse response = new UserResponse();
 
             WriteLine("****** Pipeline for request 1 ******");
@@ -220,7 +233,17 @@ namespace Example
 
             WriteLine(response);
 
-            WriteLine("****** Pipeline for request 3 ******");
+            WriteLine("****** END OF Pipeline for request 3 ******");
+
+            WriteLine("****** Pipeline for request 4 ******");
+
+            pipeline = BuildPipeLine(request4, response);
+
+            pipeline.Handle();
+
+            WriteLine(response);
+
+            WriteLine("****** END OF Pipeline for request 4 ******");
         }
 
         static RequestPipeline BuildPipeLine(UserRequest userRequest, UserResponse userResponse)
