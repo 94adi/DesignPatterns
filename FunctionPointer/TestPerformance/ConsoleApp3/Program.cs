@@ -58,14 +58,14 @@ namespace ConsoleApp3
         public static void OtherLog(string p1) { Console.WriteLine(p1); }
         public static void Log(int i) { }
 
-        public static void SayHello()
-        {
-            int a = 2; 
-            for (int i = 0; i < 1_000; i++) 
-            { 
-                a = 1; 
-            }
-        }
+        //public static void SayHello()
+        //{
+        //    int a = 2; 
+        //    for (int i = 0; i < 1_000; i++) 
+        //    { 
+        //        a = 1; 
+        //    }
+        //}
 
         //public static void TestHello(string msg)
         //{
@@ -87,7 +87,7 @@ namespace ConsoleApp3
         public static void UseDelegate()
         {
 
-            Del del1 = SayHello;
+            Del del1 = Log;
             //del1 += TestHello;
 
             del1();
