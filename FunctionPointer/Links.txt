@@ -1,1 +1,13 @@
 https://devblogs.microsoft.com/dotnet/improvements-in-native-code-interop-in-net-5-0/
+
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/proposals/csharp-9.0/function-pointers
+
+https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/unsafe-code
+
+https://www.c-sharpcorner.com/article/pointers-and-unsafe-code-in-c-sharp-everything-you-need-to-know/
+
+https://developers.redhat.com/blog/2021/04/27/some-more-c-9#function_pointers
+
+https://www.productivecsharp.com/whats-new-net5-csharp9/
+
+https://benbowen.blog/post/two_decades_of_csharp_v/
