@@ -11,3 +11,7 @@ https://developers.redhat.com/blog/2021/04/27/some-more-c-9#function_pointers
 https://www.productivecsharp.com/whats-new-net5-csharp9/
 
 https://benbowen.blog/post/two_decades_of_csharp_v/
+
+https://www.youtube.com/watch?v=xrGco4O1bfk&list=PLA8ZIAm2I03jXisxa0VEfmkMhn0zmUuCd&index=2
+
+https://mark-borg.github.io/blog/2017/interop/
