@@ -2,32 +2,13 @@
 
 #include <iostream>
 
-std::string WishList::getName() {
-	return _name;
+static const wchar_t* GetHelloString() {
+	return L"Items: Pen, Paper, Laptop, Boots";
 }
 
-void WishList::setName(std::string name) {
-	_name = name;
-}
+typedef const wchar_t* (*helloStrPtr)(void);
 
-void WishList::addItem(std::string item) {
-	_items.push_back(item);
-}
 
-void WishList::removeItem(std::string item) {
-	for (int i = 0; i < _items.size(); ++i) {
-		if (_items[i] == item) {
-			_items.erase(_items.begin() + i);
-		}
-	}
-}
-
-int WishList::countItems() {
-	return _items.size();
-}
-
-void WishList::print() {
-	for (std::string item : _items) {
-		std::cout << item << std::endl;
-	}
+extern "C" __declspec(dllexport) void GetFuncPtr(helloStrPtr * outFuncPtr) {
+	*outFuncPtr = &GetHelloString;
 }

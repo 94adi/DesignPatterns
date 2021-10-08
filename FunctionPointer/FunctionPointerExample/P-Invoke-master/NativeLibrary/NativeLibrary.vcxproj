@@ -134,8 +134,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Shoe.cpp" />
-    <ClCompile Include="Source.cpp" />
     <ClCompile Include="WishList.cpp" />
     <ClCompile Include="WishListWrapper.cpp" />
   </ItemGroup>
