@@ -28,12 +28,13 @@ namespace SimpleSerialize
             {
                 parsingResult = Int32.TryParse(Console.ReadLine(),out input);
             }
-             
+     
 
             switch (input)
             {
+                
                 case 1: serializer = new JsonSerializer(); break;
-                case 2: serializer = new XMLSerializer(); break;
+                case 2: serializer = new XMLSerializer<JamesBondCar>(); break;
                 default: serializer = new JsonSerializer(); break;
             }
 
